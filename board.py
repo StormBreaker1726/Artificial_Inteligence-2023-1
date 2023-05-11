@@ -2,8 +2,9 @@ import numpy as np
 
 
 class Board:
-    def __init__(self, id, m, n):
+    def __init__(self, id, m, n, perfect_board):
         self.board = np.zeros((m, n))
+        self.perfect_board = perfect_board
         self.id = id
         self.m = m
         self.n = n
