@@ -1,10 +1,10 @@
 #include "includes.hpp"
 #include "Board.hpp"
 
-int main()
+int main(int argc, char **argv)
 {
     std::ifstream instance;
-    instance.open("/home/joao-ntb/Documents/Repositories/UFJF/Artificial_Inteligence-2023-1/instances/faceis/dumb.txt");
+    instance.open(argv[1]);
 
     Board b(instance);
 
