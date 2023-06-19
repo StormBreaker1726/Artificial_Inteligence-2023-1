@@ -90,6 +90,8 @@ void Board::move_up()
     this->empty_position.first = new_i;
     this->empty_position.second = new_j;
 
+    this->calculate_h1();
+
     this->_moves.append(" -> Up");
 }
 
@@ -115,6 +117,8 @@ void Board::move_down()
 
     this->empty_position.first = new_i;
     this->empty_position.second = new_j;
+
+    this->calculate_h1();
 
     this->_moves.append(" -> Down");
 }
@@ -142,6 +146,8 @@ void Board::move_right()
     this->empty_position.first = new_i;
     this->empty_position.second = new_j;
 
+    this->calculate_h1();
+
     this->_moves.append(" -> Right");
 }
 
@@ -167,6 +173,8 @@ void Board::move_left()
 
     this->empty_position.first = new_i;
     this->empty_position.second = new_j;
+
+    this->calculate_h1();
 
     this->_moves.append(" -> Left");
 }
