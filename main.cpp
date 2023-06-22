@@ -1,16 +1,18 @@
 #include "includes.hpp"
-#include "Board.hpp"
+#include "AStar.hpp"
 
 int main(int argc, char **argv)
 {
     std::ifstream instance;
     instance.open(argv[1]);
 
-    Board b(instance);
+    Board *b = new Board(instance);
 
-    std::cout << "\nh1 = " << b.h1() << std::endl;
+    std::cout << "\nh1 = " << b->h1() << std::endl;
 
-    b.print_moves_map();
+    b->print_moves_map();
+
+    AStar a(b);
 
     return 0;
 }
