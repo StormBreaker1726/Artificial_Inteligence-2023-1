@@ -1,16 +1,16 @@
 #include "Board.hpp"
 
-Board::Board(std::ifstream &instance)
+Board::Board(std::ifstream& instance)
 {
-    instance >> this->rank;
+    instance >> this->_rank;
 
-    // std::cout << "Rank = " << this->rank << std::endl;
+    // std::cout << "_Rank = " << this->_rank << std::endl;
 
     // reads perfect board
-    for (size_t i = 0; i < rank; i++)
+    for (size_t i = 0; i < _rank; i++)
     {
         std::vector<unsigned int> tmp;
-        for (size_t j = 0; j < rank; j++)
+        for (size_t j = 0; j < _rank; j++)
         {
             // lembro que fazer o push_back no perfect position aqui
             unsigned int temp;
@@ -20,18 +20,18 @@ Board::Board(std::ifstream &instance)
         this->_perfect_board.push_back(tmp);
     }
 
-    size_t qtd_elements = this->rank * this->rank;
+    size_t qtd_elements = this->_rank * this->_rank;
 
     for (size_t i = 0; i < qtd_elements; i++)
     {
-        for (size_t j = 0; j < this->rank; j++)
+        for (size_t j = 0; j < this->_rank; j++)
         {
-            for (size_t k = 0; k < this->rank; k++)
+            for (size_t k = 0; k < this->_rank; k++)
             {
                 if (this->_perfect_board.at(j).at(k) == i)
                 {
                     std::pair<size_t, size_t> temp;
-                    temp.first = j;
+                    temp.first  = j;
                     temp.second = k;
                     this->_perfect_positions.push_back(temp);
                     break;
@@ -41,19 +41,19 @@ Board::Board(std::ifstream &instance)
     }
 
     // reads working board
-    for (size_t i = 0; i < rank; i++)
+    for (size_t i = 0; i < _rank; i++)
     {
         std::vector<unsigned int> tmp;
-        for (size_t j = 0; j < rank; j++)
+        for (size_t j = 0; j < _rank; j++)
         {
             unsigned int temp;
             instance >> temp;
             if (temp == 0)
             {
                 std::pair<size_t, size_t> ps;
-                ps.first = i;
-                ps.second = j;
-                this->empty_position = ps;
+                ps.first              = i;
+                ps.second             = j;
+                this->_empty_position = ps;
             }
             tmp.push_back(temp);
         }
@@ -67,13 +67,34 @@ Board::Board(std::ifstream &instance)
     // this->print();
 }
 
+Board::Board(Board *b)
+{
+    this->_moves = (b->_moves);
+
+    this->_working_board = b->_working_board;
+    this->_perfect_board = b->_perfect_board;
+
+    // this->_empty_position    = b->_empty_position;
+    // this->_perfect_positions = b->_perfect_positions;
+
+    this->_empty_position    = std::make_pair(b->_empty_position.first, b->_empty_position.second);
+    this->_perfect_positions = b->_perfect_positions;
+
+    this->_rank = b->_rank;
+
+    this->calculate_h1();
+}
+
 void Board::move_up()
 {
+#ifdef DEBUG
+    std::cout << "Moving up" << std::endl;
+#endif
     size_t i;
     size_t j;
 
-    i = this->empty_position.first;
-    j = this->empty_position.second;
+    i = this->_empty_position.first;
+    j = this->_empty_position.second;
 
     size_t new_i;
     size_t new_j;
@@ -87,8 +108,8 @@ void Board::move_up()
 
     this->_working_board.at(new_i).at(new_j) = 0;
 
-    this->empty_position.first = new_i;
-    this->empty_position.second = new_j;
+    this->_empty_position.first  = new_i;
+    this->_empty_position.second = new_j;
 
     this->calculate_h1();
 
@@ -97,11 +118,14 @@ void Board::move_up()
 
 void Board::move_down()
 {
+#ifdef DEBUG
+    std::cout << "Moving down" << std::endl;
+#endif
     size_t i;
     size_t j;
 
-    i = this->empty_position.first;
-    j = this->empty_position.second;
+    i = this->_empty_position.first;
+    j = this->_empty_position.second;
 
     size_t new_i;
     size_t new_j;
@@ -115,8 +139,8 @@ void Board::move_down()
 
     this->_working_board.at(new_i).at(new_j) = 0;
 
-    this->empty_position.first = new_i;
-    this->empty_position.second = new_j;
+    this->_empty_position.first  = new_i;
+    this->_empty_position.second = new_j;
 
     this->calculate_h1();
 
@@ -125,11 +149,14 @@ void Board::move_down()
 
 void Board::move_right()
 {
+#ifdef DEBUG
+    std::cout << "Moving right" << std::endl;
+#endif
     size_t i;
     size_t j;
 
-    i = this->empty_position.first;
-    j = this->empty_position.second;
+    i = this->_empty_position.first;
+    j = this->_empty_position.second;
 
     size_t new_i;
     size_t new_j;
@@ -143,8 +170,8 @@ void Board::move_right()
 
     this->_working_board.at(new_i).at(new_j) = 0;
 
-    this->empty_position.first = new_i;
-    this->empty_position.second = new_j;
+    this->_empty_position.first  = new_i;
+    this->_empty_position.second = new_j;
 
     this->calculate_h1();
 
@@ -153,11 +180,14 @@ void Board::move_right()
 
 void Board::move_left()
 {
+#ifdef DEBUG
+    std::cout << "Moving left" << std::endl;
+#endif
     size_t i;
     size_t j;
 
-    i = this->empty_position.first;
-    j = this->empty_position.second;
+    i = this->_empty_position.first;
+    j = this->_empty_position.second;
 
     size_t new_i;
     size_t new_j;
@@ -171,8 +201,8 @@ void Board::move_left()
 
     this->_working_board.at(new_i).at(new_j) = 0;
 
-    this->empty_position.first = new_i;
-    this->empty_position.second = new_j;
+    this->_empty_position.first  = new_i;
+    this->_empty_position.second = new_j;
 
     this->calculate_h1();
 
@@ -188,7 +218,7 @@ unsigned int Board::calculate_h1()
 
     this->_h1 = 0;
 
-    size_t qtd_elements = this->rank * this->rank;
+    size_t qtd_elements = this->_rank * this->_rank;
 
     for (size_t i = 0; i < qtd_elements; i++)
     {
@@ -224,14 +254,8 @@ unsigned int Board::h1()
 
 void Board::print()
 {
-    // std::cout << "\nPerfect positions:" << std::endl;
-    // for (size_t i = 0; i < this->_perfect_positions.size(); i++)
-    // {
-    //     std::cout << "Element " << i << ": rol = " << this->_perfect_positions.at(i).first << " col = " << this->_perfect_positions.at(i).second << std::endl;
-    // }
-
-    std::cout << "Empty position: "
-              << "rol = " << this->empty_position.first << " col = " << this->empty_position.second << std::endl;
+    std::cout << "\nEmpty position: "
+              << "\n\trol = " << this->_empty_position.first << " col = " << this->_empty_position.second << std::endl;
 
     std::cout << "\nPerfect board:" << std::endl;
     for (size_t i = 0; i < this->_perfect_board.size(); i++)
@@ -256,5 +280,43 @@ void Board::print()
 
 void Board::print_moves_map()
 {
-    std::cout << this->_moves << std::endl;
+    std::cout << "\t" << this->_moves << std::endl;
+}
+
+bool Board::goal_state_reached()
+{
+    for (size_t i = 0; i < this->_working_board.size(); i++)
+    {
+        for (size_t j = 0; j < this->_working_board.at(i).size(); j++)
+        {
+            if (this->_perfect_positions.at(this->_working_board.at(i).at(j)).first != i ||
+                this->_perfect_positions.at(this->_working_board.at(i).at(j)).second != j)
+            {
+                return false;
+            }
+        }
+    }
+
+    return true;
+}
+
+bool Board::equals(Board *b)
+{
+    for (size_t i = 0; i < this->_working_board.size(); i++)
+    {
+        for (size_t j = 0; j < this->_working_board.at(i).size(); j++)
+        {
+            for (size_t k = 0; k < b->_working_board.size(); k++)
+            {
+                for (size_t l = 0; l < b->_working_board.at(k).size(); l++)
+                {
+                    if (this->_perfect_board.at(k).at(l) != this->_working_board.at(i).at(j))
+                    {
+                        return false;
+                    }
+                }
+            }
+        }
+    }
+    return true;
 }
