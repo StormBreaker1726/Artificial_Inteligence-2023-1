@@ -36,6 +36,8 @@ public:
 
     bool equals(Board *b);
 
+    std::string to_string();
+
 private:
     std::vector<std::vector<unsigned int>> _working_board;
     std::vector<std::vector<unsigned int>> _perfect_board;

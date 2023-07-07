@@ -1,4 +1,5 @@
 #include "AStar.hpp"
+#include "IDAStar.hpp"
 #include "includes.hpp"
 
 int main(int argc, char **argv)
@@ -8,7 +9,13 @@ int main(int argc, char **argv)
 
     Board *b = new Board(instance);
 
-    AStar a(b);
+    b->print();
+
+    // std::cout << "\n\n";
+
+    // std::cout << b->to_string() << std::endl;
+
+    IDAStar alg(b);
 
     return 0;
 }

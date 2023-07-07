@@ -320,3 +320,17 @@ bool Board::equals(Board *b)
     }
     return true;
 }
+
+std::string Board::to_string()
+{
+    std::string board_string;
+    for (size_t i = 0; i < _working_board.size(); i++)
+    {
+        for (size_t j = 0; j < _working_board[i].size(); j++)
+        {
+            board_string += std::to_string(_working_board[i][j]) + " ";
+        }
+        board_string += "\n";
+    }
+    return board_string;
+}
