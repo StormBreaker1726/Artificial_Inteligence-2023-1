@@ -9,16 +9,30 @@ Backtracking::Backtracking(Board *initial)
     this->_solution_stack.push(root);
     this->_visited_nodes.insert(this->_initial_board->to_string());
 
-    bool resp = this->solver();
+    this->start = omp_get_wtime();
+    bool result = this->solver();
+    this->end   = omp_get_wtime();
 
-    if (resp)
+    if (result)
     {
-        printf("Algorithm successfuly executed!\n");
+        printf("Time to reach objective: %e seconds\n", (end - start));
+    }
+    else
+    {
+        if ((end - start) > 120)
+            printf("Failed by time\n");
+        printf("Time spent in the algorithm: %e seconds\n", (end - start));
     }
 }
 
 Backtracking::~Backtracking()
 {
+    while (!this->_solution_stack.empty())
+    {
+        PuzzleNode_stars *node = this->_solution_stack.top();
+        this->_solution_stack.pop();
+        delete node;
+    }
 }
 
 bool Backtracking::solver()

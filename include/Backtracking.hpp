@@ -21,4 +21,8 @@ private:
     bool is_visited(std::string b);
 
     void do_backtrack(PuzzleNode_stars *current_node);
+
+    float start;
+
+    float end;
 };
