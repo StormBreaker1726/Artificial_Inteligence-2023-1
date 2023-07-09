@@ -1,6 +1,7 @@
 #include "AStar.hpp"
 #include "BFS.hpp"
 #include "Backtracking.hpp"
+#include "DFS.hpp"
 #include "GreedyFirst.hpp"
 #include "IDAStar.hpp"
 #include "includes.hpp"
@@ -24,7 +25,9 @@ int main(int argc, char **argv)
 
     // Backtracking alg(b);
 
-    BFS alg(b);
+    // BFS alg(b);
+
+    DFS alg(b);
 
     return 0;
 }
