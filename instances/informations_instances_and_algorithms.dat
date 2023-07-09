@@ -1,0 +1,41 @@
+# arquivo com algumas informações de teste de cada instancia
+
+## A*
+
+### Intancias que rodam em menos tempo do que a precisão do OPENMP consegue pegar
+
+### Intancias que rodam de [tempo medível, 5] segundos
+
+### Intancias que rodam em [5, 25] segundos
+
+### Intancias que rodam em mais de 25 segundos
+
+### Instancias que não rodam
+
+
+
+## IDA*
+
+### Intancias que rodam em menos tempo do que a precisão do OPENMP consegue pegar
+
+### Intancias que rodam de [tempo medível, 5] segundos
+
+### Intancias que rodam em [5, 25] segundos
+
+### Intancias que rodam em mais de 25 segundos
+
+### Instancias que não rodam
+
+
+
+## Ordered
+
+### Intancias que rodam em menos tempo do que a precisão do OPENMP consegue pegar
+
+### Intancias que rodam de [tempo medível, 5] segundos
+
+### Intancias que rodam em [5, 25] segundos
+
+### Intancias que rodam em mais de 25 segundos
+
+### Instancias que não rodam
