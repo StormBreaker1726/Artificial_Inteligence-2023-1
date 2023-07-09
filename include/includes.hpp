@@ -8,6 +8,7 @@
 #include <limits>
 #include <omp.h>
 #include <queue>
+#include <stack>
 #include <string>
 #include <unordered_map>
 #include <unordered_set>
