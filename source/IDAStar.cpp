@@ -24,6 +24,12 @@ bool IDAStar::solver()
 {
     unsigned int threshold = this->_board->h1();
 
+    cost = 0;
+
+    visited_nodes = 0;
+
+    expanded_nodes = 0;
+
     this->_open_set.push(std::make_shared<PuzzleNode_stars>(this->_board));
     this->_open_set.top()->depth = 0;
 
@@ -38,7 +44,10 @@ bool IDAStar::solver()
             std::cout << "Moves:" << std::endl;
             current_node->_state->print_moves_map();
             std::cout << "Depth: " << current_node->depth << std::endl;
-            current_node->_state->print();
+            std::cout << "Expanded nodes: " << expanded_nodes << std::endl;
+            std::cout << "Visited nodes: " << visited_nodes << std::endl;
+            std::cout << "Cost:" << current_node->g << std::endl;
+            // current_node->_state->print();
             return true;
         }
 
@@ -72,9 +81,11 @@ bool IDAStar::solver()
             {
                 this->_open_set.push(next_node);
             }
+            visited_nodes++;
         }
 
         threshold = next_threshold;
+        expanded_nodes++;
 
         // std::cout << "Open set size = " << this->_open_set.size() << std::endl;
     }

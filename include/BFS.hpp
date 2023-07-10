@@ -23,4 +23,10 @@ private:
     float start;
 
     float end;
+
+    unsigned int cost;
+
+    unsigned int visited_nodes;
+
+    unsigned int expanded_nodes;
 };

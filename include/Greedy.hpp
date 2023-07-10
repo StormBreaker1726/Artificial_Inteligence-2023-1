@@ -29,4 +29,10 @@ private:
     bool is_explored(std::shared_ptr<Board> b);
 
     void successors(std::shared_ptr<PuzzleNode_stars> node);
+
+    unsigned int cost;
+
+    unsigned int visited_nodes;
+
+    unsigned int expanded_nodes;
 };

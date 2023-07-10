@@ -28,7 +28,9 @@ bool DFS::solver()
     initial_node->depth                            = 0;
     this->_solution_stack.push(initial_node);
 
-    this->iterations = 0;
+    this->iterations     = 0;
+    this->visited_nodes  = 0;
+    this->expanded_nodes = 0;
 
     while (!this->_solution_stack.empty() && iterations < LIM)
     {
@@ -42,7 +44,9 @@ bool DFS::solver()
             std::cout << "Moves:" << std::endl;
             current_node->_state->print_moves_map();
             std::cout << "Depth: " << current_node->depth << std::endl;
-            current_node->_state->print();
+            std::cout << "Expanded nodes: " << expanded_nodes << std::endl;
+            std::cout << "Visited nodes: " << visited_nodes << std::endl;
+            std::cout << "Cost of solution: " << current_node->depth << std::endl;
             return true;
         }
 
@@ -51,9 +55,11 @@ bool DFS::solver()
         std::vector<std::shared_ptr<PuzzleNode_stars>> _successors = this->successors(current_node);
         for (std::shared_ptr<PuzzleNode_stars> successor : _successors)
         {
+            visited_nodes++;
             if (this->_visited.find(successor->_state->to_string()) == this->_visited.end())
             {
                 this->_solution_stack.push(successor);
+                expanded_nodes++;
             }
         }
     }

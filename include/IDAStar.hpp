@@ -21,4 +21,10 @@ private:
     std::unordered_set<std::string> _closed_set;
 
     std::vector<std::shared_ptr<Board>> sucessors(std::shared_ptr<Board> b);
+
+    unsigned int cost;
+
+    unsigned int visited_nodes;
+
+    unsigned int expanded_nodes;
 };

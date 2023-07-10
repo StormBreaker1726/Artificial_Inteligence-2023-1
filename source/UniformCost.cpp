@@ -24,12 +24,14 @@ UniformCost::UniformCost(std::shared_ptr<Board> initial)
 bool UniformCost::solver()
 {
     this->_open_set.push(this->_initial_node);
+    cost           = 0;
+    visited_nodes  = 0;
+    expanded_nodes = 0;
 
     while (!this->_open_set.empty())
     {
         std::shared_ptr<PuzzleNode_stars> _current_node = this->_open_set.top();
         this->_open_set.pop();
-
         this->_cosed_set.insert(_current_node->_state->to_string());
 
         if (_current_node->is_goal_state())
@@ -38,7 +40,10 @@ bool UniformCost::solver()
             std::cout << "Moves:" << std::endl;
             _current_node->_state->print_moves_map();
             std::cout << "Depth: " << _current_node->depth << std::endl;
-            _current_node->_state->print();
+            std::cout << "Expanded nodes: " << expanded_nodes << std::endl;
+            std::cout << "Visited nodes: " << visited_nodes << std::endl;
+            std::cout << "Cost: " << _current_node->g << std::endl;
+            // _current_node->_state->print();
             return true;
         }
 
@@ -46,6 +51,7 @@ bool UniformCost::solver()
 
         for (std::shared_ptr<PuzzleNode_stars> successor : successors_vector)
         {
+            visited_nodes++;
             if (this->_cosed_set.count(successor->_state->to_string()) == 0)
             {
                 successor->g = _current_node->g + 1;
@@ -53,6 +59,7 @@ bool UniformCost::solver()
                 successor->f = successor->g + successor->h;
                 this->_open_set.push(successor);
                 this->_cosed_set.insert(successor->_state->to_string());
+                expanded_nodes++;
             }
         }
     }

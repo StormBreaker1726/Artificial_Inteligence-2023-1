@@ -37,6 +37,16 @@ public:
         return this->_closed_set.find(state) != this->_closed_set.end();
     }
 
+    float branching_factor;
+
+    unsigned int cost;
+
+    unsigned int visited_nodes;
+
+    unsigned int expanded_nodes;
+
+    std::vector<size_t> nodes_per_depth;
+
 private:
     std::priority_queue<std::shared_ptr<PuzzleNode_stars>, std::vector<std::shared_ptr<PuzzleNode_stars>>, PuzzleNode_stars_comparator> _open_set;
 
@@ -49,4 +59,6 @@ private:
     std::shared_ptr<Board> _board;
 
     std::vector<std::shared_ptr<PuzzleNode_stars>> sucessors(std::shared_ptr<PuzzleNode_stars> node);
+
+    float calculate_branching_factor(std::shared_ptr<PuzzleNode_stars>& root);
 };

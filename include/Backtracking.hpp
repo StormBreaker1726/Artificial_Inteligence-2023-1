@@ -27,4 +27,10 @@ private:
     float end;
 
     size_t iterations;
+
+    unsigned int cost;
+
+    unsigned int visited_nodes;
+
+    unsigned int expanded_nodes;
 };

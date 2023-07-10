@@ -35,6 +35,10 @@ bool Backtracking::solver()
 {
     this->iterations = 0;
 
+    cost           = 0;
+    visited_nodes  = 0;
+    expanded_nodes = 0;
+
     while (!this->_solution_stack.empty() && iterations < LIM)
     {
         this->iterations++;
@@ -47,10 +51,15 @@ bool Backtracking::solver()
             std::cout << "Moves:" << std::endl;
             current_node->_state->print_moves_map();
             std::cout << "Depth: " << current_node->depth << std::endl;
-            current_node->_state->print();
+            std::cout << "Expanded nodes: " << expanded_nodes << std::endl;
+            std::cout << "Visited nodes: " << visited_nodes << std::endl;
+            std::cout << "Cost of solution: " << current_node->depth << std::endl;
+            // current_node->_state->print();
             // delete current_node;
             return true;
         }
+
+        expanded_nodes++;
 
         std::shared_ptr<Board> current_board = std::make_shared<Board>(current_node->_state);
 
@@ -72,6 +81,7 @@ bool Backtracking::solver()
                 new_node->depth                            = current_node->depth + 1;
                 this->_solution_stack.push(new_node);
                 this->_visited_nodes.insert(new_board->to_string());
+                visited_nodes++;
             }
         }
 
@@ -88,6 +98,7 @@ bool Backtracking::solver()
                 new_node->depth                            = current_node->depth + 1;
                 this->_solution_stack.push(new_node);
                 this->_visited_nodes.insert(new_board->to_string());
+                visited_nodes++;
             }
         }
 
@@ -104,6 +115,7 @@ bool Backtracking::solver()
                 new_node->depth                            = current_node->depth + 1;
                 this->_solution_stack.push(new_node);
                 this->_visited_nodes.insert(new_board->to_string());
+                visited_nodes++;
             }
         }
 
@@ -119,6 +131,7 @@ bool Backtracking::solver()
                 new_node->depth                            = current_node->depth + 1;
                 this->_solution_stack.push(new_node);
                 this->_visited_nodes.insert(new_board->to_string());
+                visited_nodes++;
             }
         }
     }

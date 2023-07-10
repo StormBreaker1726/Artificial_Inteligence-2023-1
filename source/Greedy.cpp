@@ -36,6 +36,10 @@ bool Greedy::solver()
     initial_node->depth                            = 0;
     this->_open_list.push(initial_node);
 
+    cost           = 0;
+    visited_nodes  = 0;
+    expanded_nodes = 0;
+
     while (!this->_open_list.empty())
     {
         std::shared_ptr<PuzzleNode_stars> current_node = this->_open_list.top();
@@ -43,11 +47,17 @@ bool Greedy::solver()
 
         if (current_node->_state->goal_state_reached())
         {
+            expanded_nodes = _explored_set.size();
+            visited_nodes  = expanded_nodes + _open_list.size();
+
             std::cout << "Objective reached!" << std::endl;
             std::cout << "Moves:" << std::endl;
             current_node->_state->print_moves_map();
             std::cout << "Depth: " << current_node->depth << std::endl;
-            current_node->_state->print();
+            std::cout << "Expanded nodes: " << expanded_nodes << std::endl;
+            std::cout << "Visited nodes: " << visited_nodes << std::endl;
+            std::cout << "Cost:" << current_node->g << std::endl;
+            // current_node->_state->print();
             return true;
         }
 

@@ -37,7 +37,11 @@ bool BFS::solver()
             std::cout << "Moves:" << std::endl;
             current_node->_state->print_moves_map();
             std::cout << "Depth: " << current_node->depth << std::endl;
-            current_node->_state->print();
+            std::cout << "Expanded nodes: " << expanded_nodes << std::endl;
+            std::cout << "Visited nodes: " << visited_nodes << std::endl;
+            std::cout << "Cost of solution: " << current_node->depth << std::endl;
+            std::cout << "Cost:" << current_node->depth << std::endl;
+
             return true;
         }
 
@@ -47,10 +51,12 @@ bool BFS::solver()
 
         for (std::shared_ptr<PuzzleNode_stars> successor : successors_vector)
         {
+            visited_nodes++;
             if (!this->_explored.count(successor->_state->to_string()))
             {
                 this->_frontier.push(successor);
                 this->_explored.insert(successor->_state->to_string());
+                expanded_nodes++;
             }
         }
     }

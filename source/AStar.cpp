@@ -3,6 +3,10 @@ AStar::AStar(std::shared_ptr<Board> b)
 {
     this->_board = b;
 
+    branching_factor = cost = visited_nodes = expanded_nodes = 0;
+
+    nodes_per_depth.clear();
+
 #ifdef DEBUG
     std::cout << "Geting in to solver..." << std::endl;
 #endif
@@ -49,6 +53,10 @@ bool AStar::solver()
             std::cout << "Moves:" << std::endl;
             _current_node->_state->print_moves_map();
             std::cout << "Depth: " << _current_node->depth << std::endl;
+            std::cout << "Expanded nodes: " << expanded_nodes << std::endl;
+            std::cout << "Visited nodes: " << visited_nodes << std::endl;
+            std::cout << "Cost of solution: " << _current_node->g << std::endl;
+
             _current_node->_state->print();
             return true;
         }
@@ -59,6 +67,7 @@ bool AStar::solver()
 
         for (std::shared_ptr<PuzzleNode_stars> sucessor : _successors)
         {
+            visited_nodes++;
             if (this->_open_set_contains(sucessor->_state) || this->_closed_set_contains(sucessor->_state))
             {
                 // delete sucessor;
@@ -71,6 +80,8 @@ bool AStar::solver()
             sucessor->depth = _current_node->depth + 1;
 
             this->_open_set.push(sucessor);
+
+            expanded_nodes++;
         }
     }
 
