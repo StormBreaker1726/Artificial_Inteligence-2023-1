@@ -1,18 +1,5 @@
--- Configuring done
--- Generating done
--- Build files have been written to: /home/joao-pc-rhel/Documents/Repositories/UFJF/Artificial_Inteligence-2023-1/build
-[ 10%] Building CXX object CMakeFiles/npzz.dir/main.cpp.o
-[ 20%] Building CXX object CMakeFiles/npzz.dir/source/AStar.cpp.o
-[ 30%] Building CXX object CMakeFiles/npzz.dir/source/BFS.cpp.o
-[ 40%] Building CXX object CMakeFiles/npzz.dir/source/Backtracking.cpp.o
-[ 50%] Building CXX object CMakeFiles/npzz.dir/source/Board.cpp.o
-[ 60%] Building CXX object CMakeFiles/npzz.dir/source/DFS.cpp.o
-[ 70%] Building CXX object CMakeFiles/npzz.dir/source/Greedy.cpp.o
-[ 80%] Building CXX object CMakeFiles/npzz.dir/source/IDAStar.cpp.o
-[ 90%] Building CXX object CMakeFiles/npzz.dir/source/UniformCost.cpp.o
-[100%] Linking CXX executable npzz
-[100%] Built target npzz
-[H[2J[3J
+Resultados finais para IA
+
 
  Executing for instance: 8puzzle.txt
 
