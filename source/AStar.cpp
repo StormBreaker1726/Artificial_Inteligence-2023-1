@@ -1,5 +1,5 @@
 #include "AStar.hpp"
-AStar::AStar(Board *b)
+AStar::AStar(std::shared_ptr<Board> b)
 {
     this->_board = b;
 
@@ -29,8 +29,9 @@ AStar::AStar(Board *b)
 
 bool AStar::solver()
 {
-    PuzzleNode_stars *_start_node = new PuzzleNode_stars(this->_board);
-    _start_node->depth            = 0;
+    // PuzzleNode_stars *_start_node = new PuzzleNode_stars(this->_board);
+    std::shared_ptr<PuzzleNode_stars> _start_node = std::make_shared<PuzzleNode_stars>(this->_board);
+    _start_node->depth                            = 0;
 
     _start_node->h = this->_board->h1();
     _start_node->f = _start_node->h;
@@ -39,7 +40,7 @@ bool AStar::solver()
 
     while (!this->_open_set.empty() && (omp_get_wtime() - this->start) < 120)
     {
-        PuzzleNode_stars *_current_node = this->_open_set.top();
+        std::shared_ptr<PuzzleNode_stars> _current_node = this->_open_set.top();
         this->_open_set.pop();
 
         if (_current_node->_state->goal_state_reached())
@@ -54,13 +55,13 @@ bool AStar::solver()
 
         this->_closed_set[_current_node->_state] = _current_node;
 
-        std::vector<PuzzleNode_stars *> _successors = this->sucessors(_current_node);
+        std::vector<std::shared_ptr<PuzzleNode_stars>> _successors = this->sucessors(_current_node);
 
-        for (PuzzleNode_stars *sucessor : _successors)
+        for (std::shared_ptr<PuzzleNode_stars> sucessor : _successors)
         {
             if (this->_open_set_contains(sucessor->_state) || this->_closed_set_contains(sucessor->_state))
             {
-                delete sucessor;
+                // delete sucessor;
                 continue;
             }
 
@@ -76,11 +77,11 @@ bool AStar::solver()
     return false;
 }
 
-std::vector<PuzzleNode_stars *> AStar::sucessors(PuzzleNode_stars *node)
+std::vector<std::shared_ptr<PuzzleNode_stars>> AStar::sucessors(std::shared_ptr<PuzzleNode_stars> node)
 {
-    std::vector<PuzzleNode_stars *> _successors;
+    std::vector<std::shared_ptr<PuzzleNode_stars>> _successors;
 
-    Board *_current_state = node->_state;
+    std::shared_ptr<Board> _current_state = node->_state;
 
     size_t rank = _current_state->rank();
 
@@ -89,39 +90,39 @@ std::vector<PuzzleNode_stars *> AStar::sucessors(PuzzleNode_stars *node)
 
     if (empy_row > 0)
     {
-        Board *success_board = new Board(_current_state);
+        std::shared_ptr<Board> success_board = std::make_shared<Board>(_current_state);
         success_board->move_up();
 
-        PuzzleNode_stars *success_node = new PuzzleNode_stars(success_board, node, "Up");
+        std::shared_ptr<PuzzleNode_stars> success_node = std::make_shared<PuzzleNode_stars>(success_board, node, "Up");
         _successors.push_back(success_node);
     }
 
     if (empy_row < rank - 1)
     {
-        Board *success_board = new Board(_current_state);
+        std::shared_ptr<Board> success_board = std::make_shared<Board>(_current_state);
 
         success_board->move_down();
 
-        PuzzleNode_stars *success_node = new PuzzleNode_stars(success_board, node, "Down");
+        std::shared_ptr<PuzzleNode_stars> success_node = std::make_shared<PuzzleNode_stars>(success_board, node, "Down");
         _successors.push_back(success_node);
     }
 
     if (empy_column < rank - 1)
     {
-        Board *success_board = new Board(_current_state);
+        std::shared_ptr<Board> success_board = std::make_shared<Board>(_current_state);
         success_board->move_right();
 
-        PuzzleNode_stars *success_node = new PuzzleNode_stars(success_board, node, "Right");
+        std::shared_ptr<PuzzleNode_stars> success_node = std::make_shared<PuzzleNode_stars>(success_board, node, "Right");
         _successors.push_back(success_node);
     }
 
     if (empy_column > 0)
     {
-        Board *success_board = new Board(_current_state);
+        std::shared_ptr<Board> success_board = std::make_shared<Board>(_current_state);
 
         success_board->move_left();
 
-        PuzzleNode_stars *success_node = new PuzzleNode_stars(success_board, node, "Left");
+        std::shared_ptr<PuzzleNode_stars> success_node = std::make_shared<PuzzleNode_stars>(success_board, node, "Left");
         _successors.push_back(success_node);
     }
 

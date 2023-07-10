@@ -7,16 +7,16 @@
 class DFS
 {
 public:
-    DFS(Board *initial);
+    DFS(std::shared_ptr<Board> initial);
 
     bool solver();
 
 private:
-    Board *_initial_board;
+    std::shared_ptr<Board> _initial_board;
 
-    std::vector<PuzzleNode_stars *> successors(PuzzleNode_stars *node);
+    std::vector<std::shared_ptr<PuzzleNode_stars>> successors(std::shared_ptr<PuzzleNode_stars> node);
 
-    std::stack<PuzzleNode_stars *> _solution_stack;
+    std::stack<std::shared_ptr<PuzzleNode_stars>> _solution_stack;
 
     std::unordered_set<std::string> _visited;
 

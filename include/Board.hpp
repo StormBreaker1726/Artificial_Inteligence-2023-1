@@ -6,7 +6,7 @@ class Board
 {
 public:
     Board(std::ifstream& instance);
-    Board(Board *b);
+    Board(std::shared_ptr<Board> b);
     ~Board(){};
 
     void move_up();
@@ -34,7 +34,7 @@ public:
 
     bool goal_state_reached();
 
-    bool equals(Board *b);
+    bool equals(std::shared_ptr<Board> b);
 
     std::string to_string();
 

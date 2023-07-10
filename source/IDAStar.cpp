@@ -1,8 +1,8 @@
 #include "IDAStar.hpp"
 
-IDAStar::IDAStar(Board *b_initial)
+IDAStar::IDAStar(std::shared_ptr<Board> b_initial)
 {
-    this->_board = new Board(b_initial);
+    this->_board = std::make_shared<Board>(b_initial);
 
     this->start = omp_get_wtime();
     bool result = this->solver();
@@ -24,12 +24,12 @@ bool IDAStar::solver()
 {
     unsigned int threshold = this->_board->h1();
 
-    this->_open_set.push(new PuzzleNode_stars(this->_board));
+    this->_open_set.push(std::make_shared<PuzzleNode_stars>(this->_board));
     this->_open_set.top()->depth = 0;
 
     while (!this->_open_set.empty())
     {
-        PuzzleNode_stars *current_node = this->_open_set.top();
+        std::shared_ptr<PuzzleNode_stars> current_node = this->_open_set.top();
         this->_open_set.pop();
 
         if (current_node->_state->goal_state_reached())
@@ -53,11 +53,11 @@ bool IDAStar::solver()
 
         unsigned int next_threshold = UINT32_MAX;
 
-        std::vector<Board *> next_boards = this->sucessors(current_node->_state);
+        std::vector<std::shared_ptr<Board>> next_boards = this->sucessors(current_node->_state);
 
-        for (Board *next_board : next_boards)
+        for (std::shared_ptr<Board> next_board : next_boards)
         {
-            PuzzleNode_stars *next_node = new PuzzleNode_stars(next_board, current_node);
+            std::shared_ptr<PuzzleNode_stars> next_node = std::make_shared<PuzzleNode_stars>(next_board, current_node);
 
             next_node->g     = current_node->g + 1;
             next_node->h     = next_node->_state->calculate_h1();
@@ -82,9 +82,9 @@ bool IDAStar::solver()
     return false;
 }
 
-std::vector<Board *> IDAStar::sucessors(Board *b)
+std::vector<std::shared_ptr<Board>> IDAStar::sucessors(std::shared_ptr<Board> b)
 {
-    std::vector<Board *> _succss;
+    std::vector<std::shared_ptr<Board>> _succss;
 
     size_t rank = b->rank();
 
@@ -93,7 +93,7 @@ std::vector<Board *> IDAStar::sucessors(Board *b)
 
     if (empy_row > 0)
     {
-        Board *success_board = new Board(b);
+        std::shared_ptr<Board> success_board = std::make_shared<Board>(b);
         success_board->move_up();
 
         _succss.push_back(success_board);
@@ -101,7 +101,7 @@ std::vector<Board *> IDAStar::sucessors(Board *b)
 
     if (empy_row < rank - 1)
     {
-        Board *success_board = new Board(b);
+        std::shared_ptr<Board> success_board = std::make_shared<Board>(b);
         success_board->move_down();
 
         _succss.push_back(success_board);
@@ -109,7 +109,7 @@ std::vector<Board *> IDAStar::sucessors(Board *b)
 
     if (empy_column < rank - 1)
     {
-        Board *success_board = new Board(b);
+        std::shared_ptr<Board> success_board = std::make_shared<Board>(b);
         success_board->move_right();
 
         _succss.push_back(success_board);
@@ -117,7 +117,7 @@ std::vector<Board *> IDAStar::sucessors(Board *b)
 
     if (empy_column > 0)
     {
-        Board *success_board = new Board(b);
+        std::shared_ptr<Board> success_board = std::make_shared<Board>(b);
         success_board->move_left();
 
         _succss.push_back(success_board);

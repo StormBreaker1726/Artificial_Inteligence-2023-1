@@ -5,7 +5,7 @@
 class IDAStar
 {
 public:
-    IDAStar(Board *b_initial);
+    IDAStar(std::shared_ptr<Board> b_initial);
 
     bool solver();
 
@@ -14,11 +14,11 @@ private:
 
     float end;
 
-    Board *_board;
+    std::shared_ptr<Board> _board;
 
-    std::priority_queue<PuzzleNode_stars *, std::vector<PuzzleNode_stars *>, PuzzleNode_stars_comparator> _open_set;
+    std::priority_queue<std::shared_ptr<PuzzleNode_stars>, std::vector<std::shared_ptr<PuzzleNode_stars>>, PuzzleNode_stars_comparator> _open_set;
 
     std::unordered_set<std::string> _closed_set;
 
-    std::vector<Board *> sucessors(Board *b);
+    std::vector<std::shared_ptr<Board>> sucessors(std::shared_ptr<Board> b);
 };

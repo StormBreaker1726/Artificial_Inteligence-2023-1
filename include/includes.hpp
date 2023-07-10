@@ -6,6 +6,7 @@
 #include <iomanip>
 #include <iostream>
 #include <limits>
+#include <memory>
 #include <omp.h>
 #include <queue>
 #include <stack>
@@ -14,4 +15,4 @@
 #include <unordered_set>
 #include <vector>
 
-#define LIM 10000
+#define LIM 20000

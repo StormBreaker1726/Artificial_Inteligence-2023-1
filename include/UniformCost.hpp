@@ -7,21 +7,20 @@
 class UniformCost
 {
 public:
-    UniformCost(Board *initial);
+    UniformCost(std::shared_ptr<Board> initial);
 
-    ~UniformCost()
-    {
-        delete this->_initial_node;
+    ~UniformCost(){
+        // delete this->_initial_node;
     };
 
     bool solver();
 
 private:
-    PuzzleNode_stars *_initial_node;
+    std::shared_ptr<PuzzleNode_stars> _initial_node;
 
-    std::vector<PuzzleNode_stars *> successors(PuzzleNode_stars *node);
+    std::vector<std::shared_ptr<PuzzleNode_stars>> successors(std::shared_ptr<PuzzleNode_stars> node);
 
-    std::priority_queue<PuzzleNode_stars *, std::vector<PuzzleNode_stars *>, PuzzleNode_stars_comparator_gf> _open_set;
+    std::priority_queue<std::shared_ptr<PuzzleNode_stars>, std::vector<std::shared_ptr<PuzzleNode_stars>>, PuzzleNode_stars_comparator_gf> _open_set;
 
     std::unordered_set<std::string> _cosed_set;
 

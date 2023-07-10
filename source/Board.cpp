@@ -67,7 +67,7 @@ Board::Board(std::ifstream& instance)
     // this->print();
 }
 
-Board::Board(Board *b)
+Board::Board(std::shared_ptr<Board> b)
 {
     this->_moves = (b->_moves);
 
@@ -300,7 +300,7 @@ bool Board::goal_state_reached()
     return true;
 }
 
-bool Board::equals(Board *b)
+bool Board::equals(std::shared_ptr<Board> b)
 {
     for (size_t i = 0; i < this->_working_board.size(); i++)
     {

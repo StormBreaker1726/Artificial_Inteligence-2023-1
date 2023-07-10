@@ -7,7 +7,7 @@
 class Greedy
 {
 public:
-    Greedy(Board *initial);
+    Greedy(std::shared_ptr<Board> initial);
 
     ~Greedy();
 
@@ -18,15 +18,15 @@ private:
 
     float end;
 
-    Board *_initial_board;
+    std::shared_ptr<Board> _initial_board;
 
-    std::priority_queue<PuzzleNode_stars *, std::vector<PuzzleNode_stars *>, PuzzleNode_comparator> _open_list;
+    std::priority_queue<std::shared_ptr<PuzzleNode_stars>, std::vector<std::shared_ptr<PuzzleNode_stars>>, PuzzleNode_comparator> _open_list;
 
     std::unordered_set<std::string> _explored_set;
 
-    PuzzleNode_stars *create_child_node(Board *board, PuzzleNode_stars *parent, std::string move);
+    std::shared_ptr<PuzzleNode_stars> create_child_node(std::shared_ptr<Board> board, std::shared_ptr<PuzzleNode_stars> parent, std::string move);
 
-    bool is_explored(Board *b);
+    bool is_explored(std::shared_ptr<Board> b);
 
-    void successors(PuzzleNode_stars *node);
+    void successors(std::shared_ptr<PuzzleNode_stars> node);
 };

@@ -1,8 +1,8 @@
 #include "Greedy.hpp"
 
-Greedy::Greedy(Board *initial)
+Greedy::Greedy(std::shared_ptr<Board> initial)
 {
-    this->_initial_board = new Board(initial);
+    this->_initial_board = std::make_shared<Board>(initial);
 
     this->start = omp_get_wtime();
     bool result = this->solver();
@@ -22,23 +22,23 @@ Greedy::Greedy(Board *initial)
 
 Greedy::~Greedy()
 {
-    while (!this->_open_list.empty())
-    {
-        PuzzleNode_stars *node = this->_open_list.top();
-        this->_open_list.pop();
-        delete node;
-    }
+    // while (!this->_open_list.empty())
+    // {
+    //     PuzzleNode_stars *node = this->_open_list.top();
+    //     this->_open_list.pop();
+    //     delete node;
+    // }
 }
 
 bool Greedy::solver()
 {
-    PuzzleNode_stars *initial_node = new PuzzleNode_stars(this->_initial_board);
-    initial_node->depth            = 0;
+    std::shared_ptr<PuzzleNode_stars> initial_node = std::make_shared<PuzzleNode_stars>(this->_initial_board);
+    initial_node->depth                            = 0;
     this->_open_list.push(initial_node);
 
     while (!this->_open_list.empty())
     {
-        PuzzleNode_stars *current_node = this->_open_list.top();
+        std::shared_ptr<PuzzleNode_stars> current_node = this->_open_list.top();
         this->_open_list.pop();
 
         if (current_node->_state->goal_state_reached())
@@ -58,14 +58,14 @@ bool Greedy::solver()
     return false;
 }
 
-bool Greedy::is_explored(Board *b)
+bool Greedy::is_explored(std::shared_ptr<Board> b)
 {
     return (this->_explored_set.find(b->to_string()) != this->_explored_set.end());
 }
 
-void Greedy::successors(PuzzleNode_stars *node)
+void Greedy::successors(std::shared_ptr<PuzzleNode_stars> node)
 {
-    Board *_current_state = node->_state;
+    std::shared_ptr<Board> _current_state = node->_state;
 
     size_t rank = _current_state->rank();
 
@@ -75,78 +75,62 @@ void Greedy::successors(PuzzleNode_stars *node)
     if (empy_row > 0)
     {
         // up
-        Board *success_board = new Board(_current_state);
+        std::shared_ptr<Board> success_board = std::make_shared<Board>(_current_state);
         success_board->move_up();
 
         if (!this->is_explored(success_board))
         {
-            PuzzleNode_stars *child = this->create_child_node(success_board, node, "Up");
+            std::shared_ptr<PuzzleNode_stars> child = this->create_child_node(success_board, node, "Up");
             this->_open_list.push(child);
-        }
-        else
-        {
-            delete success_board;
         }
     }
 
     if (empy_row < rank - 1)
     {
         // down
-        Board *success_board = new Board(_current_state);
+        std::shared_ptr<Board> success_board = std::make_shared<Board>(_current_state);
         success_board->move_down();
 
         if (!this->is_explored(success_board))
         {
-            PuzzleNode_stars *child = this->create_child_node(success_board, node, "Down");
+            std::shared_ptr<PuzzleNode_stars> child = this->create_child_node(success_board, node, "Down");
             this->_open_list.push(child);
-        }
-        else
-        {
-            delete success_board;
         }
     }
 
     if (empy_column < rank - 1)
     {
         // right
-        Board *success_board = new Board(_current_state);
+        std::shared_ptr<Board> success_board = std::make_shared<Board>(_current_state);
         success_board->move_right();
 
         if (!this->is_explored(success_board))
         {
-            PuzzleNode_stars *child = this->create_child_node(success_board, node, "Right");
+            std::shared_ptr<PuzzleNode_stars> child = this->create_child_node(success_board, node, "Right");
             this->_open_list.push(child);
-        }
-        else
-        {
-            delete success_board;
         }
     }
 
     if (empy_column > 0)
     {
         // left
-        Board *success_board = new Board(_current_state);
+        std::shared_ptr<Board> success_board = std::make_shared<Board>(_current_state);
         success_board->move_left();
 
         if (!this->is_explored(success_board))
         {
-            PuzzleNode_stars *child = this->create_child_node(success_board, node, "Left");
+            std::shared_ptr<PuzzleNode_stars> child = this->create_child_node(success_board, node, "Left");
             this->_open_list.push(child);
-        }
-        else
-        {
-            delete success_board;
         }
     }
 }
 
-PuzzleNode_stars *Greedy::create_child_node(Board *board, PuzzleNode_stars *parent, std::string move)
+std::shared_ptr<PuzzleNode_stars> Greedy::create_child_node(std::shared_ptr<Board> board, std::shared_ptr<PuzzleNode_stars> parent, std::string move)
 {
-    PuzzleNode_stars *child = new PuzzleNode_stars(board, parent, move);
-    child->g                = parent->g + 1;
-    child->h                = board->h1();
-    child->f                = child->g + child->h;
-    child->depth            = parent->depth + 1;
+    std::shared_ptr<PuzzleNode_stars> child = std::make_shared<PuzzleNode_stars>(board, parent, move);
+    child->g                                = parent->g + 1;
+    child->h                                = board->h1();
+    child->f                                = child->g + child->h;
+    child->depth                            = parent->depth + 1;
     return child;
 }

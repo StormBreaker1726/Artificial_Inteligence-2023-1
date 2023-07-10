@@ -6,20 +6,21 @@
 class AStar
 {
 public:
-    AStar(Board *b);
+    AStar(std::shared_ptr<Board> b);
     ~AStar()
     {
     }
 
     bool solver();
 
-    bool _open_set_contains(Board *board)
+    bool _open_set_contains(std::shared_ptr<Board> board)
     {
-        std::priority_queue<PuzzleNode_stars *, std::vector<PuzzleNode_stars *>, PuzzleNode_stars_comparator> tempQueue = this->_open_set;
+        std::priority_queue<std::shared_ptr<PuzzleNode_stars>, std::vector<std::shared_ptr<PuzzleNode_stars>>, PuzzleNode_stars_comparator> tempQueue =
+            this->_open_set;
 
         while (!tempQueue.empty())
         {
-            PuzzleNode_stars *node = tempQueue.top();
+            std::shared_ptr<PuzzleNode_stars> node = tempQueue.top();
             tempQueue.pop();
 
             if (node->_state->equals(board))
@@ -31,21 +32,21 @@ public:
         return false;
     }
 
-    bool _closed_set_contains(Board *state)
+    bool _closed_set_contains(std::shared_ptr<Board> state)
     {
         return this->_closed_set.find(state) != this->_closed_set.end();
     }
 
 private:
-    std::priority_queue<PuzzleNode_stars *, std::vector<PuzzleNode_stars *>, PuzzleNode_stars_comparator> _open_set;
+    std::priority_queue<std::shared_ptr<PuzzleNode_stars>, std::vector<std::shared_ptr<PuzzleNode_stars>>, PuzzleNode_stars_comparator> _open_set;
 
-    std::unordered_map<Board *, PuzzleNode_stars *> _closed_set;
+    std::unordered_map<std::shared_ptr<Board>, std::shared_ptr<PuzzleNode_stars>> _closed_set;
 
     float start;
 
     float end;
 
-    Board *_board;
+    std::shared_ptr<Board> _board;
 
-    std::vector<PuzzleNode_stars *> sucessors(PuzzleNode_stars *node);
+    std::vector<std::shared_ptr<PuzzleNode_stars>> sucessors(std::shared_ptr<PuzzleNode_stars> node);
 };
