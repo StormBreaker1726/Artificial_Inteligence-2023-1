@@ -27,8 +27,22 @@ AStar::AStar(Board *b)
     }
 }
 
+AStar::~AStar()
+{
+    while (!this->_open_set.empty())
+    {
+        PuzzleNode_stars *temp = this->_open_set.top();
+        this->_open_set.pop();
+        delete temp;
+    }
+}
+
 bool AStar::solver()
 {
+    _solution_cost        = 0;
+    _total_expanded_nodes = 0;
+    _total_visited_nodes  = 0;
+
     PuzzleNode_stars *_start_node = new PuzzleNode_stars(this->_board);
     _start_node->depth            = 0;
 
@@ -42,17 +56,26 @@ bool AStar::solver()
         PuzzleNode_stars *_current_node = this->_open_set.top();
         this->_open_set.pop();
 
+        this->_total_visited_nodes++;
+
         if (_current_node->_state->goal_state_reached())
         {
             std::cout << "Objective reached!" << std::endl;
             std::cout << "Moves:" << std::endl;
             _current_node->_state->print_moves_map();
+            std::cout << "Path size = " << _current_node->_state->size_path() << std::endl;
+            std::cout << "Solution cost = " << _current_node->g << std::endl;
+            std::cout << "Expanded nodes = " << _total_expanded_nodes << std::endl;
+            std::cout << "Visited nodes = " << _total_visited_nodes << std::endl;
             std::cout << "Depth: " << _current_node->depth << std::endl;
-            _current_node->_state->print();
+            _average_branching_factor = static_cast<float>(_total_expanded_nodes - 1) / static_cast<float>(_total_visited_nodes);
+            std::cout << "Average branching factor = " << _average_branching_factor << std::endl;
+            // _current_node->_state->print();
             return true;
         }
 
         this->_closed_set[_current_node->_state] = _current_node;
+        this->_total_expanded_nodes++;
 
         std::vector<PuzzleNode_stars *> _successors = this->sucessors(_current_node);
 
@@ -60,6 +83,7 @@ bool AStar::solver()
         {
             if (this->_open_set_contains(sucessor->_state) || this->_closed_set_contains(sucessor->_state))
             {
+                delete sucessor->_state;
                 delete sucessor;
                 continue;
             }
@@ -71,6 +95,8 @@ bool AStar::solver()
 
             this->_open_set.push(sucessor);
         }
+
+        delete _current_node;
     }
 
     return false;

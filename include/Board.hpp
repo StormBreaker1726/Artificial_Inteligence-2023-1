@@ -38,6 +38,11 @@ public:
 
     std::string to_string();
 
+    inline size_t size_path()
+    {
+        return this->_moves.size();
+    };
+
 private:
     std::vector<std::vector<unsigned int>> _working_board;
     std::vector<std::vector<unsigned int>> _perfect_board;

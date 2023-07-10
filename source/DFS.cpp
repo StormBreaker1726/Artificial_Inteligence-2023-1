@@ -22,11 +22,14 @@ DFS::DFS(Board *initial)
 
 bool DFS::solver()
 {
+    size_t            lim          = 10000;
     PuzzleNode_stars *initial_node = new PuzzleNode_stars(this->_initial_board);
     initial_node->depth            = 0;
     this->_solution_stack.push(initial_node);
 
-    while (!this->_solution_stack.empty())
+    size_t i = 0;
+
+    while (!this->_solution_stack.empty() && i < lim)
     {
         PuzzleNode_stars *current_node = this->_solution_stack.top();
         this->_solution_stack.pop();
@@ -36,8 +39,10 @@ bool DFS::solver()
             std::cout << "Objective reached!" << std::endl;
             std::cout << "Moves:" << std::endl;
             current_node->_state->print_moves_map();
+            std::cout << "Size of path = " << current_node->_state->size_path() << std::endl;
+            std::cout << "Cost = " << current_node->_state->size_path() << std::endl;
             std::cout << "Depth: " << current_node->depth << std::endl;
-            current_node->_state->print();
+            // current_node->_state->print();
             return true;
         }
 
@@ -51,6 +56,7 @@ bool DFS::solver()
                 this->_solution_stack.push(successor);
             }
         }
+        i++;
     }
 
     return false;

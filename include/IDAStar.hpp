@@ -10,6 +10,12 @@ public:
     bool solver();
 
 private:
+    unsigned int expanded_nodes;
+
+    unsigned int visited_nodes;
+
+    unsigned int branching_sum;
+
     float start;
 
     float end;

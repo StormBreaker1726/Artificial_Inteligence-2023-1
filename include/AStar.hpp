@@ -7,9 +7,7 @@ class AStar
 {
 public:
     AStar(Board *b);
-    ~AStar()
-    {
-    }
+    ~AStar();
 
     bool solver();
 
@@ -48,4 +46,9 @@ private:
     Board *_board;
 
     std::vector<PuzzleNode_stars *> sucessors(PuzzleNode_stars *node);
+
+    int   _solution_cost;             // Custo da solução
+    int   _total_expanded_nodes;      // Número total de nós expandidos
+    int   _total_visited_nodes;       // Número total de nós visitados
+    float _average_branching_factor;  // Valor médio do fator de ramificação da árvore de busca
 };

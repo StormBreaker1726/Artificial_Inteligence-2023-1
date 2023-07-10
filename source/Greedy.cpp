@@ -47,7 +47,7 @@ bool Greedy::solver()
             std::cout << "Moves:" << std::endl;
             current_node->_state->print_moves_map();
             std::cout << "Depth: " << current_node->depth << std::endl;
-            current_node->_state->print();
+            // current_node->_state->print();
             return true;
         }
 

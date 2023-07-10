@@ -36,8 +36,10 @@ bool BFS::solver()
             std::cout << "Objective reached!" << std::endl;
             std::cout << "Moves:" << std::endl;
             current_node->_state->print_moves_map();
+            std::cout << "Size of path = " << current_node->_state->size_path() << std::endl;
+            std::cout << "Cost = " << current_node->_state->size_path() << std::endl;
             std::cout << "Depth: " << current_node->depth << std::endl;
-            current_node->_state->print();
+            // current_node->_state->print();
             return true;
         }
 

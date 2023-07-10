@@ -38,7 +38,7 @@ bool UniformCost::solver()
             std::cout << "Moves:" << std::endl;
             _current_node->_state->print_moves_map();
             std::cout << "Depth: " << _current_node->depth << std::endl;
-            _current_node->_state->print();
+            // _current_node->_state->print();
             return true;
         }
 

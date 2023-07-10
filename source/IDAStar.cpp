@@ -8,6 +8,8 @@ IDAStar::IDAStar(Board *b_initial)
     bool result = this->solver();
     this->end   = omp_get_wtime();
 
+    this->visited_nodes = this->expanded_nodes = this->branching_sum = 0;
+
     if (result)
     {
         printf("Time to reach objective: %e seconds\n", (end - start));
@@ -38,7 +40,7 @@ bool IDAStar::solver()
             std::cout << "Moves:" << std::endl;
             current_node->_state->print_moves_map();
             std::cout << "Depth: " << current_node->depth << std::endl;
-            current_node->_state->print();
+            // current_node->_state->print();
             return true;
         }
 
