@@ -16,6 +16,8 @@ DFS::DFS(Board *initial)
     {
         if ((this->end - this->start) > 120)
             printf("Failed by time\n");
+        if (this->iterations == LIM)
+            printf("Iteration limit!\n");
         printf("Time spent in the algorithm: %e seconds\n", (this->end - this->start));
     }
 }
@@ -26,8 +28,11 @@ bool DFS::solver()
     initial_node->depth            = 0;
     this->_solution_stack.push(initial_node);
 
-    while (!this->_solution_stack.empty())
+    this->iterations = 0;
+
+    while (!this->_solution_stack.empty() && iterations < LIM)
     {
+        this->iterations++;
         PuzzleNode_stars *current_node = this->_solution_stack.top();
         this->_solution_stack.pop();
 

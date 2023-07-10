@@ -13,3 +13,5 @@
 #include <unordered_map>
 #include <unordered_set>
 #include <vector>
+
+#define LIM 10000

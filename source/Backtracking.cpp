@@ -21,6 +21,8 @@ Backtracking::Backtracking(Board *initial)
     {
         if ((end - start) > 120)
             printf("Failed by time\n");
+        if (this->iterations == LIM)
+            printf("Iteration limit!\n");
         printf("Time spent in the algorithm: %e seconds\n", (end - start));
     }
 }
@@ -37,8 +39,11 @@ Backtracking::~Backtracking()
 
 bool Backtracking::solver()
 {
-    while (!this->_solution_stack.empty())
+    this->iterations = 0;
+
+    while (!this->_solution_stack.empty() && iterations < LIM)
     {
+        this->iterations++;
         PuzzleNode_stars *current_node = this->_solution_stack.top();
         this->_solution_stack.pop();
 

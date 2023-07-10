@@ -23,4 +23,6 @@ private:
     float start;
 
     float end;
+
+    size_t iterations;
 };
