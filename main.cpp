@@ -21,9 +21,17 @@ int main(int argc, char **argv)
     std::ifstream instance;
     instance.open(argv[1]);
 
+    std::string instance_name(argv[1]);
+
+    std::string clean_name;
+
+    instance_name = instance_name.substr(instance_name.find_last_of("/") + 1);
+
+    std::cout << "\n\n Executing for instance: " << instance_name << std::endl;
+
     std::shared_ptr<Board> b = std::make_shared<Board>(instance);
 
-    b->print();
+    // b->print();
 
     switch (atoi(argv[2]))
     {

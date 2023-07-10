@@ -57,7 +57,7 @@ bool AStar::solver()
             std::cout << "Visited nodes: " << visited_nodes << std::endl;
             std::cout << "Cost of solution: " << _current_node->g << std::endl;
 
-            _current_node->_state->print();
+            // _current_node->_state->print();
             return true;
         }
 
