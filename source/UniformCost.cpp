@@ -1,6 +1,6 @@
-#include "GreedyFirst.hpp"
+#include "UniformCost.hpp"
 
-GreedyFirst::GreedyFirst(Board *initial)
+UniformCost::UniformCost(Board *initial)
 {
     this->_initial_node        = new PuzzleNode_stars(initial);
     this->_initial_node->depth = 0;
@@ -21,7 +21,7 @@ GreedyFirst::GreedyFirst(Board *initial)
     }
 }
 
-bool GreedyFirst::solver()
+bool UniformCost::solver()
 {
     this->_open_set.push(this->_initial_node);
 
@@ -64,7 +64,7 @@ bool GreedyFirst::solver()
     return false;
 }
 
-std::vector<PuzzleNode_stars *> GreedyFirst::successors(PuzzleNode_stars *node)
+std::vector<PuzzleNode_stars *> UniformCost::successors(PuzzleNode_stars *node)
 {
     std::vector<PuzzleNode_stars *> _successors;
 

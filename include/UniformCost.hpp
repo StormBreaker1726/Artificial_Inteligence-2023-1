@@ -4,12 +4,12 @@
 #include "PuzzleNode_stars.hpp"
 #include "includes.hpp"
 
-class GreedyFirst
+class UniformCost
 {
 public:
-    GreedyFirst(Board *initial);
+    UniformCost(Board *initial);
 
-    ~GreedyFirst()
+    ~UniformCost()
     {
         delete this->_initial_node;
     };

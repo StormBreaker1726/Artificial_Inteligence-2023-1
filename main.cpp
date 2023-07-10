@@ -2,8 +2,9 @@
 #include "BFS.hpp"
 #include "Backtracking.hpp"
 #include "DFS.hpp"
-#include "GreedyFirst.hpp"
+#include "Greedy.hpp"
 #include "IDAStar.hpp"
+#include "UniformCost.hpp"
 #include "includes.hpp"
 
 int main(int argc, char **argv)
@@ -27,7 +28,9 @@ int main(int argc, char **argv)
 
     // BFS alg(b);
 
-    DFS alg(b);
+    // DFS alg(b);
+
+    // Greedy alg(b);
 
     return 0;
 }

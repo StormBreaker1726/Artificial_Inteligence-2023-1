@@ -48,3 +48,11 @@ struct PuzzleNode_stars_comparator_gf
         return (a->g + a->h) > (b->g + b->h);
     }
 };
+
+struct PuzzleNode_comparator
+{
+    bool operator()(const PuzzleNode_stars *a, const PuzzleNode_stars *b) const
+    {
+        return a->h > b->h;
+    }
+};
