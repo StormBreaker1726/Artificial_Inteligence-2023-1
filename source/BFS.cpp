@@ -22,6 +22,7 @@ BFS::BFS(std::shared_ptr<Board> initial)
 
 bool BFS::solver()
 {
+    this->max_depth                                = 0;
     std::shared_ptr<PuzzleNode_stars> initial_node = std::make_shared<PuzzleNode_stars>(this->_initial_board);
     initial_node->depth                            = 0;
     this->_frontier.push(initial_node);
@@ -41,6 +42,7 @@ bool BFS::solver()
             std::cout << "Visited nodes: " << visited_nodes << std::endl;
             std::cout << "Cost of solution: " << current_node->depth << std::endl;
             std::cout << "Cost:" << current_node->depth << std::endl;
+            std::cout << "Branching factor: " << ((float)visited_nodes / (float)max_depth) << std::endl;
 
             return true;
         }
@@ -82,6 +84,7 @@ std::vector<std::shared_ptr<PuzzleNode_stars>> BFS::successors(std::shared_ptr<P
 
         std::shared_ptr<PuzzleNode_stars> success_node = std::make_shared<PuzzleNode_stars>(success_board, node, "Up");
         success_node->depth                            = node->depth + 1;
+        this->max_depth                                = std::max(this->max_depth, success_node->depth);
         _successors.push_back(success_node);
     }
 
@@ -93,6 +96,7 @@ std::vector<std::shared_ptr<PuzzleNode_stars>> BFS::successors(std::shared_ptr<P
 
         std::shared_ptr<PuzzleNode_stars> success_node = std::make_shared<PuzzleNode_stars>(success_board, node, "Down");
         success_node->depth                            = node->depth + 1;
+        this->max_depth                                = std::max(this->max_depth, success_node->depth);
         _successors.push_back(success_node);
     }
 
@@ -103,6 +107,7 @@ std::vector<std::shared_ptr<PuzzleNode_stars>> BFS::successors(std::shared_ptr<P
 
         std::shared_ptr<PuzzleNode_stars> success_node = std::make_shared<PuzzleNode_stars>(success_board, node, "Right");
         success_node->depth                            = node->depth + 1;
+        this->max_depth                                = std::max(this->max_depth, success_node->depth);
         _successors.push_back(success_node);
     }
 
@@ -114,6 +119,7 @@ std::vector<std::shared_ptr<PuzzleNode_stars>> BFS::successors(std::shared_ptr<P
 
         std::shared_ptr<PuzzleNode_stars> success_node = std::make_shared<PuzzleNode_stars>(success_board, node, "Left");
         success_node->depth                            = node->depth + 1;
+        this->max_depth                                = std::max(this->max_depth, success_node->depth);
         _successors.push_back(success_node);
     }
 

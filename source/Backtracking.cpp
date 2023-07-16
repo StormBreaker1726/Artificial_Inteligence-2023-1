@@ -35,6 +35,8 @@ bool Backtracking::solver()
 {
     this->iterations = 0;
 
+    this->max_depth = 0;
+
     cost           = 0;
     visited_nodes  = 0;
     expanded_nodes = 0;
@@ -54,6 +56,7 @@ bool Backtracking::solver()
             std::cout << "Expanded nodes: " << expanded_nodes << std::endl;
             std::cout << "Visited nodes: " << visited_nodes << std::endl;
             std::cout << "Cost of solution: " << current_node->depth << std::endl;
+            std::cout << "Branching factor: " << ((float)visited_nodes / (float)max_depth) << std::endl;
             // current_node->_state->print();
             // delete current_node;
             return true;
@@ -79,6 +82,7 @@ bool Backtracking::solver()
             {
                 std::shared_ptr<PuzzleNode_stars> new_node = std::make_shared<PuzzleNode_stars>(new_board, current_node, "Up");
                 new_node->depth                            = current_node->depth + 1;
+                this->max_depth                            = std::max(this->max_depth, new_node->depth);
                 this->_solution_stack.push(new_node);
                 this->_visited_nodes.insert(new_board->to_string());
                 visited_nodes++;
@@ -96,6 +100,7 @@ bool Backtracking::solver()
             {
                 std::shared_ptr<PuzzleNode_stars> new_node = std::make_shared<PuzzleNode_stars>(new_board, current_node, "Down");
                 new_node->depth                            = current_node->depth + 1;
+                this->max_depth                            = std::max(this->max_depth, new_node->depth);
                 this->_solution_stack.push(new_node);
                 this->_visited_nodes.insert(new_board->to_string());
                 visited_nodes++;
@@ -113,6 +118,7 @@ bool Backtracking::solver()
             {
                 std::shared_ptr<PuzzleNode_stars> new_node = std::make_shared<PuzzleNode_stars>(new_board, current_node, "Right");
                 new_node->depth                            = current_node->depth + 1;
+                this->max_depth                            = std::max(this->max_depth, new_node->depth);
                 this->_solution_stack.push(new_node);
                 this->_visited_nodes.insert(new_board->to_string());
                 visited_nodes++;
@@ -129,6 +135,7 @@ bool Backtracking::solver()
             {
                 std::shared_ptr<PuzzleNode_stars> new_node = std::make_shared<PuzzleNode_stars>(new_board, current_node, "Left");
                 new_node->depth                            = current_node->depth + 1;
+                this->max_depth                            = std::max(this->max_depth, new_node->depth);
                 this->_solution_stack.push(new_node);
                 this->_visited_nodes.insert(new_board->to_string());
                 visited_nodes++;

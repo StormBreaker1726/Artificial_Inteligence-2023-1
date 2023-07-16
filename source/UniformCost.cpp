@@ -24,9 +24,10 @@ UniformCost::UniformCost(std::shared_ptr<Board> initial)
 bool UniformCost::solver()
 {
     this->_open_set.push(this->_initial_node);
-    cost           = 0;
-    visited_nodes  = 0;
-    expanded_nodes = 0;
+    cost            = 0;
+    visited_nodes   = 0;
+    expanded_nodes  = 0;
+    this->max_depth = 0;
 
     while (!this->_open_set.empty())
     {
@@ -43,6 +44,7 @@ bool UniformCost::solver()
             std::cout << "Expanded nodes: " << expanded_nodes << std::endl;
             std::cout << "Visited nodes: " << visited_nodes << std::endl;
             std::cout << "Cost: " << _current_node->g << std::endl;
+            std::cout << "Branching factor: " << ((float)visited_nodes / (float)max_depth) << std::endl;
             // _current_node->_state->print();
             return true;
         }
@@ -85,6 +87,7 @@ std::vector<std::shared_ptr<PuzzleNode_stars>> UniformCost::successors(std::shar
 
         std::shared_ptr<PuzzleNode_stars> success_node = std::make_shared<PuzzleNode_stars>(success_board, node, "Up");
         success_node->depth                            = node->depth + 1;
+        this->max_depth                                = std::max(this->max_depth, success_node->depth);
         _successors.push_back(success_node);
     }
 
@@ -96,6 +99,7 @@ std::vector<std::shared_ptr<PuzzleNode_stars>> UniformCost::successors(std::shar
 
         std::shared_ptr<PuzzleNode_stars> success_node = std::make_shared<PuzzleNode_stars>(success_board, node, "Down");
         success_node->depth                            = node->depth + 1;
+        this->max_depth                                = std::max(this->max_depth, success_node->depth);
         _successors.push_back(success_node);
     }
 
@@ -106,6 +110,7 @@ std::vector<std::shared_ptr<PuzzleNode_stars>> UniformCost::successors(std::shar
 
         std::shared_ptr<PuzzleNode_stars> success_node = std::make_shared<PuzzleNode_stars>(success_board, node, "Right");
         success_node->depth                            = node->depth + 1;
+        this->max_depth                                = std::max(this->max_depth, success_node->depth);
         _successors.push_back(success_node);
     }
 
@@ -117,6 +122,7 @@ std::vector<std::shared_ptr<PuzzleNode_stars>> UniformCost::successors(std::shar
 
         std::shared_ptr<PuzzleNode_stars> success_node = std::make_shared<PuzzleNode_stars>(success_board, node, "Left");
         success_node->depth                            = node->depth + 1;
+        this->max_depth                                = std::max(this->max_depth, success_node->depth);
         _successors.push_back(success_node);
     }
 

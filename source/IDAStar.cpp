@@ -28,8 +28,8 @@ bool IDAStar::solver()
 
     visited_nodes = 0;
 
-    expanded_nodes = 0;
-
+    expanded_nodes  = 0;
+    this->max_depth = 0;
     this->_open_set.push(std::make_shared<PuzzleNode_stars>(this->_board));
     this->_open_set.top()->depth = 0;
 
@@ -47,6 +47,7 @@ bool IDAStar::solver()
             std::cout << "Expanded nodes: " << expanded_nodes << std::endl;
             std::cout << "Visited nodes: " << visited_nodes << std::endl;
             std::cout << "Cost:" << current_node->g << std::endl;
+            std::cout << "Branching factor: " << ((float)visited_nodes / (float)max_depth) << std::endl;
             // current_node->_state->print();
             return true;
         }
@@ -72,6 +73,7 @@ bool IDAStar::solver()
             next_node->h     = next_node->_state->calculate_h1();
             next_node->f     = next_node->g + next_node->h;
             next_node->depth = current_node->depth + 1;
+            this->max_depth  = std::max(this->max_depth, next_node->depth);
 
             if (next_node->f > threshold)
             {

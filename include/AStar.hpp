@@ -45,6 +45,8 @@ public:
 
     unsigned int expanded_nodes;
 
+    size_t max_depth;
+
     std::vector<size_t> nodes_per_depth;
 
 private:

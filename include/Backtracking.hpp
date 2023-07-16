@@ -33,4 +33,6 @@ private:
     unsigned int visited_nodes;
 
     unsigned int expanded_nodes;
+
+    size_t max_depth;
 };

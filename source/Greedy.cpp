@@ -32,6 +32,7 @@ Greedy::~Greedy()
 
 bool Greedy::solver()
 {
+    this->max_depth                                = 0;
     std::shared_ptr<PuzzleNode_stars> initial_node = std::make_shared<PuzzleNode_stars>(this->_initial_board);
     initial_node->depth                            = 0;
     this->_open_list.push(initial_node);
@@ -57,6 +58,7 @@ bool Greedy::solver()
             std::cout << "Expanded nodes: " << expanded_nodes << std::endl;
             std::cout << "Visited nodes: " << visited_nodes << std::endl;
             std::cout << "Cost:" << current_node->g << std::endl;
+            std::cout << "Branching factor: " << ((float)visited_nodes / (float)max_depth) << std::endl;
             // current_node->_state->print();
             return true;
         }
@@ -142,5 +144,6 @@ std::shared_ptr<PuzzleNode_stars> Greedy::create_child_node(std::shared_ptr<Boar
     child->h                                = board->h1();
     child->f                                = child->g + child->h;
     child->depth                            = parent->depth + 1;
+    this->max_depth                         = std::max(this->max_depth, child->depth);
     return child;
 }

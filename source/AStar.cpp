@@ -40,6 +40,8 @@ bool AStar::solver()
     _start_node->h = this->_board->h1();
     _start_node->f = _start_node->h;
 
+    this->max_depth = 0;
+
     this->_open_set.push(_start_node);
 
     while (!this->_open_set.empty() && (omp_get_wtime() - this->start) < 120)
@@ -56,6 +58,7 @@ bool AStar::solver()
             std::cout << "Expanded nodes: " << expanded_nodes << std::endl;
             std::cout << "Visited nodes: " << visited_nodes << std::endl;
             std::cout << "Cost of solution: " << _current_node->g << std::endl;
+            std::cout << "Branching factor: " << ((float)visited_nodes / (float)max_depth) << std::endl;
 
             // _current_node->_state->print();
             return true;
@@ -78,6 +81,7 @@ bool AStar::solver()
             sucessor->h     = sucessor->_state->calculate_h1();
             sucessor->f     = sucessor->g + sucessor->h;
             sucessor->depth = _current_node->depth + 1;
+            this->max_depth = std::max(this->max_depth, sucessor->depth);
 
             this->_open_set.push(sucessor);
 

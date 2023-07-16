@@ -1,0 +1,926 @@
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/joao-pc-rhel/Documents/Repositories/UFJF/Artificial_Inteligence-2023-1/build
+[ 10%] Building CXX object CMakeFiles/npzz.dir/main.cpp.o
+[ 20%] Building CXX object CMakeFiles/npzz.dir/source/AStar.cpp.o
+[ 30%] Building CXX object CMakeFiles/npzz.dir/source/BFS.cpp.o
+[ 40%] Building CXX object CMakeFiles/npzz.dir/source/Backtracking.cpp.o
+[ 50%] Building CXX object CMakeFiles/npzz.dir/source/Board.cpp.o
+[ 60%] Building CXX object CMakeFiles/npzz.dir/source/DFS.cpp.o
+[ 70%] Building CXX object CMakeFiles/npzz.dir/source/Greedy.cpp.o
+[ 80%] Building CXX object CMakeFiles/npzz.dir/source/IDAStar.cpp.o
+[ 90%] Building CXX object CMakeFiles/npzz.dir/source/UniformCost.cpp.o
+[100%] Linking CXX executable npzz
+[100%] Built target npzz
+[H[2J[3J
+
+ Executing for instance: 8puzzle.txt
+
+A*:
+Objective reached!
+Moves:
+	Original -> Right
+Depth: 1
+Expanded nodes: 3
+Visited nodes: 3
+Cost of solution: 1
+Branching factor: 3
+Time to reach objective: 0.000000e+00 seconds
+
+
+ Executing for instance: 8puzzle_2.txt
+
+A*:
+Objective reached!
+Moves:
+	Original -> Right -> Down -> Left -> Left -> Up -> Up -> Right -> Down -> Left -> Down -> Right -> Up -> Right -> Down
+Depth: 14
+Expanded nodes: 7011
+Visited nodes: 7011
+Cost of solution: 14
+Branching factor: 500.786
+Time to reach objective: 1.109375e+00 seconds
+
+
+ Executing for instance: 8puzzle_3.txt
+
+A*:
+Objective reached!
+Moves:
+	Original -> Up -> Up -> Left -> Down -> Right
+Depth: 5
+Expanded nodes: 19
+Visited nodes: 19
+Cost of solution: 5
+Branching factor: 3.8
+Time to reach objective: 0.000000e+00 seconds
+
+
+ Executing for instance: 15puzzle.txt
+
+A*:
+Objective reached!
+Moves:
+	Original -> Down
+Depth: 1
+Expanded nodes: 3
+Visited nodes: 3
+Cost of solution: 1
+Branching factor: 3
+Time to reach objective: 0.000000e+00 seconds
+
+
+ Executing for instance: 15puzzle_2.txt
+
+A*:
+Objective reached!
+Moves:
+	Original -> Right -> Down -> Right -> Down
+Depth: 4
+Expanded nodes: 15
+Visited nodes: 15
+Cost of solution: 4
+Branching factor: 3.75
+Time to reach objective: 0.000000e+00 seconds
+
+
+ Executing for instance: 15puzzle_3.txt
+
+A*:
+Objective reached!
+Moves:
+	Original -> Down
+Depth: 1
+Expanded nodes: 3
+Visited nodes: 3
+Cost of solution: 1
+Branching factor: 3
+Time to reach objective: 0.000000e+00 seconds
+
+
+ Executing for instance: 24puzzle.txt
+
+A*:
+Objective reached!
+Moves:
+	Original -> Right -> Down
+Depth: 2
+Expanded nodes: 7
+Visited nodes: 7
+Cost of solution: 2
+Branching factor: 3.5
+Time to reach objective: 0.000000e+00 seconds
+
+
+ Executing for instance: 35puzzle.txt
+
+A*:
+Objective reached!
+Moves:
+	Original -> Right -> Down
+Depth: 2
+Expanded nodes: 7
+Visited nodes: 7
+Cost of solution: 2
+Branching factor: 3.5
+Time to reach objective: 0.000000e+00 seconds
+
+
+ Executing for instance: 04.txt
+
+A*:
+Objective reached!
+Moves:
+	Original -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right
+Depth: 20
+Expanded nodes: 37770
+Visited nodes: 37770
+Cost of solution: 20
+Branching factor: 1888.5
+Time to reach objective: 5.048047e+01 seconds
+
+
+ Executing for instance: 06.txt
+
+A*:
+Objective reached!
+Moves:
+	Original -> Up -> Left -> Down -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Down -> Right
+Depth: 14
+Expanded nodes: 330
+Visited nodes: 330
+Cost of solution: 14
+Branching factor: 23.5714
+Time to reach objective: 3.906250e-03 seconds
+
+
+ Executing for instance: 8puzzle.txt
+
+IDA*:
+Objective reached!
+Moves:
+	Original -> Right
+Depth: 1
+Expanded nodes: 1
+Visited nodes: 3
+Cost:1
+Branching factor: 3
+Time to reach objective: 0.000000e+00 seconds
+
+
+ Executing for instance: 8puzzle_2.txt
+
+IDA*:
+Objective reached!
+Moves:
+	Original -> Right -> Down -> Left -> Left -> Up -> Up -> Right -> Down -> Left -> Down -> Right -> Up -> Right -> Down
+Depth: 14
+Expanded nodes: 74
+Visited nodes: 204
+Cost:14
+Branching factor: 14.5714
+Time to reach objective: 3.906250e-03 seconds
+
+
+ Executing for instance: 8puzzle_3.txt
+
+IDA*:
+Objective reached!
+Moves:
+	Original -> Up -> Up -> Left -> Down -> Right
+Depth: 5
+Expanded nodes: 5
+Visited nodes: 15
+Cost:5
+Branching factor: 3
+Time to reach objective: 0.000000e+00 seconds
+
+
+ Executing for instance: 15puzzle.txt
+
+IDA*:
+Objective reached!
+Moves:
+	Original -> Down
+Depth: 1
+Expanded nodes: 1
+Visited nodes: 3
+Cost:1
+Branching factor: 3
+Time to reach objective: 0.000000e+00 seconds
+
+
+ Executing for instance: 15puzzle_2.txt
+
+IDA*:
+Objective reached!
+Moves:
+	Original -> Right -> Down -> Right -> Down
+Depth: 4
+Expanded nodes: 4
+Visited nodes: 15
+Cost:4
+Branching factor: 3.75
+Time to reach objective: 0.000000e+00 seconds
+
+
+ Executing for instance: 15puzzle_3.txt
+
+IDA*:
+Objective reached!
+Moves:
+	Original -> Down
+Depth: 1
+Expanded nodes: 1
+Visited nodes: 3
+Cost:1
+Branching factor: 3
+Time to reach objective: 0.000000e+00 seconds
+
+
+ Executing for instance: 24puzzle.txt
+
+IDA*:
+Objective reached!
+Moves:
+	Original -> Right -> Down
+Depth: 2
+Expanded nodes: 2
+Visited nodes: 7
+Cost:2
+Branching factor: 3.5
+Time to reach objective: 0.000000e+00 seconds
+
+
+ Executing for instance: 35puzzle.txt
+
+IDA*:
+Objective reached!
+Moves:
+	Original -> Right -> Down
+Depth: 2
+Expanded nodes: 2
+Visited nodes: 7
+Cost:2
+Branching factor: 3.5
+Time to reach objective: 0.000000e+00 seconds
+
+
+ Executing for instance: 04.txt
+
+IDA*:
+Time spent in the algorithm: 0.000000e+00 seconds
+
+
+ Executing for instance: 06.txt
+
+IDA*:
+Objective reached!
+Moves:
+	Original -> Right -> Up -> Left -> Left -> Down -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Down -> Right -> Up -> Right -> Down -> Left -> Left -> Up -> Right -> Down -> Right
+Depth: 24
+Expanded nodes: 962
+Visited nodes: 2573
+Cost:24
+Branching factor: 107.208
+Time to reach objective: 3.906250e-03 seconds
+
+
+ Executing for instance: 8puzzle.txt
+
+Uniform Cost:
+Objective reached!
+Moves:
+	Original -> Right
+Depth: 1
+Expanded nodes: 3
+Visited nodes: 3
+Cost: 1
+Branching factor: 3
+Time to reach objective: 0.000000e+00 seconds
+
+
+ Executing for instance: 8puzzle_2.txt
+
+Uniform Cost:
+Objective reached!
+Moves:
+	Original -> Right -> Down -> Left -> Left -> Up -> Up -> Right -> Down -> Left -> Down -> Right -> Up -> Right -> Down
+Depth: 14
+Expanded nodes: 182
+Visited nodes: 297
+Cost: 14
+Branching factor: 21.2143
+Time to reach objective: 0.000000e+00 seconds
+
+
+ Executing for instance: 8puzzle_3.txt
+
+Uniform Cost:
+Objective reached!
+Moves:
+	Original -> Up -> Up -> Left -> Down -> Right
+Depth: 5
+Expanded nodes: 11
+Visited nodes: 15
+Cost: 5
+Branching factor: 3
+Time to reach objective: 0.000000e+00 seconds
+
+
+ Executing for instance: 15puzzle.txt
+
+Uniform Cost:
+Objective reached!
+Moves:
+	Original -> Down
+Depth: 1
+Expanded nodes: 3
+Visited nodes: 3
+Cost: 1
+Branching factor: 3
+Time to reach objective: 0.000000e+00 seconds
+
+
+ Executing for instance: 15puzzle_2.txt
+
+Uniform Cost:
+Objective reached!
+Moves:
+	Original -> Right -> Down -> Right -> Down
+Depth: 4
+Expanded nodes: 12
+Visited nodes: 15
+Cost: 4
+Branching factor: 3.75
+Time to reach objective: 0.000000e+00 seconds
+
+
+ Executing for instance: 15puzzle_3.txt
+
+Uniform Cost:
+Objective reached!
+Moves:
+	Original -> Down
+Depth: 1
+Expanded nodes: 3
+Visited nodes: 3
+Cost: 1
+Branching factor: 3
+Time to reach objective: 0.000000e+00 seconds
+
+
+ Executing for instance: 24puzzle.txt
+
+Uniform Cost:
+Objective reached!
+Moves:
+	Original -> Right -> Down
+Depth: 2
+Expanded nodes: 6
+Visited nodes: 7
+Cost: 2
+Branching factor: 3.5
+Time to reach objective: 0.000000e+00 seconds
+
+
+ Executing for instance: 35puzzle.txt
+
+Uniform Cost:
+Objective reached!
+Moves:
+	Original -> Right -> Down
+Depth: 2
+Expanded nodes: 6
+Visited nodes: 7
+Cost: 2
+Branching factor: 3.5
+Time to reach objective: 0.000000e+00 seconds
+
+
+ Executing for instance: 04.txt
+
+Uniform Cost:
+Objective reached!
+Moves:
+	Original -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right
+Depth: 20
+Expanded nodes: 561
+Visited nodes: 913
+Cost: 20
+Branching factor: 45.65
+Time to reach objective: 0.000000e+00 seconds
+
+
+ Executing for instance: 06.txt
+
+Uniform Cost:
+Objective reached!
+Moves:
+	Original -> Up -> Left -> Down -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Down -> Right
+Depth: 14
+Expanded nodes: 88
+Visited nodes: 137
+Cost: 14
+Branching factor: 9.78571
+Time to reach objective: 0.000000e+00 seconds
+
+
+ Executing for instance: 8puzzle.txt
+
+BFS:
+Objective reached!
+Moves:
+	Original -> Right
+Depth: 1
+Expanded nodes: 6
+Visited nodes: 7
+Cost of solution: 1
+Cost:1
+Branching factor: 3.5
+Time to reach objective: 0.000000e+00 seconds
+
+
+ Executing for instance: 8puzzle_2.txt
+
+BFS:
+Objective reached!
+Moves:
+	Original -> Right -> Down -> Left -> Left -> Up -> Up -> Right -> Down -> Left -> Down -> Right -> Up -> Right -> Down
+Depth: 14
+Expanded nodes: 8343
+Visited nodes: 14542
+Cost of solution: 14
+Cost:14
+Branching factor: 969.467
+Time to reach objective: 1.953125e-02 seconds
+
+
+ Executing for instance: 8puzzle_3.txt
+
+BFS:
+Objective reached!
+Moves:
+	Original -> Up -> Up -> Left -> Down -> Right
+Depth: 5
+Expanded nodes: 65
+Visited nodes: 100
+Cost of solution: 5
+Cost:5
+Branching factor: 16.6667
+Time to reach objective: 0.000000e+00 seconds
+
+
+ Executing for instance: 15puzzle.txt
+
+BFS:
+Objective reached!
+Moves:
+	Original -> Down
+Depth: 1
+Expanded nodes: 5
+Visited nodes: 6
+Cost of solution: 1
+Cost:1
+Branching factor: 3
+Time to reach objective: 0.000000e+00 seconds
+
+
+ Executing for instance: 15puzzle_2.txt
+
+BFS:
+Objective reached!
+Moves:
+	Original -> Right -> Down -> Right -> Down
+Depth: 4
+Expanded nodes: 123
+Visited nodes: 182
+Cost of solution: 4
+Cost:4
+Branching factor: 36.4
+Time to reach objective: 3.906250e-03 seconds
+
+
+ Executing for instance: 15puzzle_3.txt
+
+BFS:
+Objective reached!
+Moves:
+	Original -> Down
+Depth: 1
+Expanded nodes: 5
+Visited nodes: 6
+Cost of solution: 1
+Cost:1
+Branching factor: 3
+Time to reach objective: 0.000000e+00 seconds
+
+
+ Executing for instance: 24puzzle.txt
+
+BFS:
+Objective reached!
+Moves:
+	Original -> Right -> Down
+Depth: 2
+Expanded nodes: 27
+Visited nodes: 37
+Cost of solution: 2
+Cost:2
+Branching factor: 12.3333
+Time to reach objective: 0.000000e+00 seconds
+
+
+ Executing for instance: 35puzzle.txt
+
+BFS:
+Objective reached!
+Moves:
+	Original -> Right -> Down
+Depth: 2
+Expanded nodes: 27
+Visited nodes: 37
+Cost of solution: 2
+Cost:2
+Branching factor: 12.3333
+Time to reach objective: 0.000000e+00 seconds
+
+
+ Executing for instance: 04.txt
+
+BFS:
+Objective reached!
+Moves:
+	Original -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right
+Depth: 20
+Expanded nodes: 60985
+Visited nodes: 118762
+Cost of solution: 20
+Cost:20
+Branching factor: 5655.33
+Time to reach objective: 1.757812e-01 seconds
+
+
+ Executing for instance: 06.txt
+
+BFS:
+Objective reached!
+Moves:
+	Original -> Up -> Left -> Down -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Down -> Right
+Depth: 14
+Expanded nodes: 6621
+Visited nodes: 11292
+Cost of solution: 14
+Cost:14
+Branching factor: 752.8
+Time to reach objective: 1.562500e-02 seconds
+
+
+ Executing for instance: 8puzzle.txt
+
+DFS:
+Objective reached!
+Moves:
+	Original -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down
+Depth: 29
+Expanded nodes: 55
+Visited nodes: 83
+Cost of solution: 29
+Branching factor: 2.86207
+Time to reach objective: 0.000000e+00 seconds
+
+
+ Executing for instance: 8puzzle_2.txt
+
+DFS:
+Iteration limit!
+Time spent in the algorithm: 1.179688e+00 seconds
+
+
+ Executing for instance: 8puzzle_3.txt
+
+DFS:
+Objective reached!
+Moves:
+	Original -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Down -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Down -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left
+Depth: 2191
+Expanded nodes: 3884
+Visited nodes: 6284
+Cost of solution: 2191
+Branching factor: 2.8681
+Time to reach objective: 2.343750e-02 seconds
+
+
+ Executing for instance: 15puzzle.txt
+
+DFS:
+Objective reached!
+Moves:
+	Original -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right
+Depth: 55
+Expanded nodes: 112
+Visited nodes: 166
+Cost of solution: 55
+Branching factor: 3.01818
+Time to reach objective: 0.000000e+00 seconds
+
+
+ Executing for instance: 15puzzle_2.txt
+
+DFS:
+Objective reached!
+Moves:
+	Original -> Left -> Down -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Up -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Down -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Up -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Down -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Up -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Down -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Up -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Down -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Up -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Down -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Up -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Down -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Up -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Down -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Up -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Down -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Up -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Down -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Up -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Down -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Up -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Down -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Down -> Left -> Left -> Left -> Up -> Right -> Right -> Right -> Up -> Left -> Down -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right
+Depth: 1924
+Expanded nodes: 3860
+Visited nodes: 5861
+Cost of solution: 1924
+Branching factor: 3.04626
+Time to reach objective: 1.953125e-02 seconds
+
+
+ Executing for instance: 15puzzle_3.txt
+
+DFS:
+Objective reached!
+Moves:
+	Original -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Down -> Right -> Right -> Right
+Depth: 55
+Expanded nodes: 112
+Visited nodes: 166
+Cost of solution: 55
+Branching factor: 3.01818
+Time to reach objective: 0.000000e+00 seconds
+
+
+ Executing for instance: 24puzzle.txt
+
+DFS:
+Objective reached!
+Moves:
+	Original -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Right
+Depth: 88
+Expanded nodes: 187
+Visited nodes: 274
+Cost of solution: 88
+Branching factor: 3.11364
+Time to reach objective: 3.906250e-03 seconds
+
+
+ Executing for instance: 35puzzle.txt
+
+DFS:
+Objective reached!
+Moves:
+	Original -> Left -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Right -> Right
+Depth: 130
+Expanded nodes: 284
+Visited nodes: 413
+Cost of solution: 130
+Branching factor: 3.17692
+Time to reach objective: 0.000000e+00 seconds
+
+
+ Executing for instance: 04.txt
+
+DFS:
+Iteration limit!
+Time spent in the algorithm: 1.308594e+00 seconds
+
+
+ Executing for instance: 06.txt
+
+Backtracking:
+Iteration limit!
+Time spent in the algorithm: 1.570312e+00 seconds
+
+
+ Executing for instance: 8puzzle.txt
+
+Backtracking:
+Iteration limit!
+Time spent in the algorithm: 1.621094e+00 seconds
+
+
+ Executing for instance: 8puzzle_2.txt
+
+Backtracking:
+Objective reached!
+Moves:
+	Original -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Down -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Down -> Left -> Up -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Down -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Down -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Down -> Left -> Up -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Down -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Down -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Down -> Left -> Up -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Down -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Down -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Down -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Down -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Down -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Down -> Left -> Up -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Down -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Down -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Down -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Down -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Down -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Down -> Left -> Up -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Down -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Down -> Left -> Up -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Up -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Down -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Down -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Down -> Left -> Up -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Down -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Down -> Left -> Up -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Down -> Left -> Up -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Down -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Down -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Down -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Down -> Left -> Up -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Down -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Down -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Down -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Down -> Left -> Left -> Up -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Down -> Left -> Up -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Down -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Down -> Left -> Up -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Down -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Down -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Up -> Right -> Down -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Down -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Down -> Left -> Up -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Down -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Down -> Left -> Up -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Down -> Left -> Up -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Up -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Down -> Left -> Up -> Up -> Right -> Right -> Down -> Down -> Left -> Left -> Up -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Down -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Up -> Left -> Down -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right
+Depth: 13914
+Expanded nodes: 14317
+Visited nodes: 25273
+Cost of solution: 13914
+Branching factor: 1.81637
+Time to reach objective: 7.656250e-01 seconds
+
+
+ Executing for instance: 8puzzle_3.txt
+
+Backtracking:
+Iteration limit!
+Time spent in the algorithm: 1.617188e+00 seconds
+
+
+ Executing for instance: 15puzzle.txt
+
+Backtracking:
+Iteration limit!
+Time spent in the algorithm: 1.878906e+00 seconds
+
+
+ Executing for instance: 15puzzle_2.txt
+
+Backtracking:
+Iteration limit!
+Time spent in the algorithm: 1.800781e+00 seconds
+
+
+ Executing for instance: 15puzzle_3.txt
+
+Backtracking:
+Iteration limit!
+Time spent in the algorithm: 1.710938e+00 seconds
+
+
+ Executing for instance: 24puzzle.txt
+
+Backtracking:
+Objective reached!
+Moves:
+	Original -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Right
+Depth: 88
+Expanded nodes: 88
+Visited nodes: 187
+Cost of solution: 88
+Branching factor: 2.125
+Time to reach objective: 0.000000e+00 seconds
+
+
+ Executing for instance: 35puzzle.txt
+
+Backtracking:
+Objective reached!
+Moves:
+	Original -> Left -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Right -> Right -> Up -> Left -> Left -> Left -> Left -> Left -> Down -> Right -> Right -> Right -> Right -> Right
+Depth: 130
+Expanded nodes: 130
+Visited nodes: 284
+Cost of solution: 130
+Branching factor: 2.18462
+Time to reach objective: 0.000000e+00 seconds
+
+
+ Executing for instance: 04.txt
+
+Backtracking:
+Iteration limit!
+Time spent in the algorithm: 1.464844e+00 seconds
+
+
+ Executing for instance: 06.txt
+
+Backtracking:
+Iteration limit!
+Time spent in the algorithm: 1.468750e+00 seconds
+
+
+ Executing for instance: 8puzzle.txt
+
+Greedy:
+Objective reached!
+Moves:
+	Original -> Right
+Depth: 1
+Expanded nodes: 1
+Visited nodes: 3
+Cost:1
+Branching factor: 3
+Time to reach objective: 0.000000e+00 seconds
+
+
+ Executing for instance: 8puzzle_2.txt
+
+Greedy:
+Objective reached!
+Moves:
+	Original -> Right -> Down -> Left -> Left -> Up -> Up -> Right -> Down -> Left -> Down -> Right -> Up -> Right -> Down
+Depth: 14
+Expanded nodes: 31
+Visited nodes: 58
+Cost:14
+Branching factor: 4.14286
+Time to reach objective: 0.000000e+00 seconds
+
+
+ Executing for instance: 8puzzle_3.txt
+
+Greedy:
+Objective reached!
+Moves:
+	Original -> Up -> Up -> Left -> Down -> Right
+Depth: 5
+Expanded nodes: 5
+Visited nodes: 11
+Cost:5
+Branching factor: 2.2
+Time to reach objective: 0.000000e+00 seconds
+
+
+ Executing for instance: 15puzzle.txt
+
+Greedy:
+Objective reached!
+Moves:
+	Original -> Down
+Depth: 1
+Expanded nodes: 1
+Visited nodes: 3
+Cost:1
+Branching factor: 3
+Time to reach objective: 0.000000e+00 seconds
+
+
+ Executing for instance: 15puzzle_2.txt
+
+Greedy:
+Objective reached!
+Moves:
+	Original -> Right -> Down -> Right -> Down
+Depth: 4
+Expanded nodes: 4
+Visited nodes: 12
+Cost:4
+Branching factor: 3
+Time to reach objective: 0.000000e+00 seconds
+
+
+ Executing for instance: 15puzzle_3.txt
+
+Greedy:
+Objective reached!
+Moves:
+	Original -> Down
+Depth: 1
+Expanded nodes: 1
+Visited nodes: 3
+Cost:1
+Branching factor: 3
+Time to reach objective: 0.000000e+00 seconds
+
+
+ Executing for instance: 24puzzle.txt
+
+Greedy:
+Objective reached!
+Moves:
+	Original -> Right -> Down
+Depth: 2
+Expanded nodes: 2
+Visited nodes: 6
+Cost:2
+Branching factor: 3
+Time to reach objective: 0.000000e+00 seconds
+
+
+ Executing for instance: 35puzzle.txt
+
+Greedy:
+Objective reached!
+Moves:
+	Original -> Right -> Down
+Depth: 2
+Expanded nodes: 2
+Visited nodes: 6
+Cost:2
+Branching factor: 3
+Time to reach objective: 0.000000e+00 seconds
+
+
+ Executing for instance: 04.txt
+
+Greedy:
+Objective reached!
+Moves:
+	Original -> Down -> Left -> Down -> Left -> Up -> Right -> Down -> Right -> Up -> Up -> Left -> Down -> Right -> Down -> Left -> Up -> Up -> Left -> Down -> Down -> Right -> Right -> Up -> Up -> Left -> Down -> Right -> Down -> Left -> Left -> Up -> Right -> Up -> Left -> Down -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Left -> Down -> Right -> Up -> Right -> Down -> Left -> Left -> Up -> Right -> Down -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Down -> Left -> Up -> Up -> Right -> Down -> Left -> Left -> Up -> Right -> Down -> Down -> Right -> Up -> Up -> Left -> Left -> Down -> Right -> Up -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Down -> Down -> Left -> Up -> Up -> Right -> Down -> Left -> Down -> Right
+Depth: 100
+Expanded nodes: 756
+Visited nodes: 1272
+Cost:100
+Branching factor: 12.2308
+Time to reach objective: 3.906250e-03 seconds
+
+
+ Executing for instance: 06.txt
+
+Greedy:
+Objective reached!
+Moves:
+	Original -> Right -> Down -> Left -> Up -> Right -> Up -> Left -> Down -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Down -> Right -> Down -> Left -> Left -> Up -> Right -> Right -> Up -> Left -> Left -> Down -> Down -> Right -> Right -> Up -> Left -> Left -> Down -> Right -> Right -> Up -> Left -> Left -> Up -> Right -> Right -> Down -> Down -> Left -> Up -> Up -> Right -> Down -> Down -> Left -> Up -> Right -> Up -> Left -> Down -> Down -> Right -> Up -> Left -> Up -> Right -> Down -> Down -> Left -> Up -> Up -> Left -> Down -> Right -> Down -> Right -> Up -> Up -> Left -> Down -> Right -> Down -> Left -> Up -> Up -> Left -> Down -> Right -> Down -> Right -> Up -> Left -> Up -> Right -> Down -> Down -> Left -> Up -> Left -> Down -> Right -> Right -> Up -> Up -> Left -> Down -> Right -> Down -> Left -> Left -> Up -> Right -> Down -> Right -> Up -> Left -> Left -> Down -> Right -> Up -> Right -> Down -> Left -> Left -> Up -> Right -> Up -> Right -> Down -> Down -> Left -> Up -> Right -> Up -> Left -> Down -> Down -> Right
+Depth: 134
+Expanded nodes: 509
+Visited nodes: 864
+Cost:134
+Branching factor: 5.76
+Time to reach objective: 3.906250e-03 seconds
